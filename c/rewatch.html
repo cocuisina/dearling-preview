@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rewatch a story, Album direction</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%230f6b5c%27/%3E%3Ccircle cx=%2716%27 cy=%2713%27 r=%275%27 fill=%27white%27/%3E%3Cpath d=%27M7 27c1-6 5-8 9-8s8 2 9 8z%27 fill=%27white%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="album.css">
+</head>
+<body>
+<nav class="bar solid" aria-label="Main">
+  <a class="brand" href="index.html">Dearling</a>
+  <a class="nav" href="app-home.html">Home</a>
+  <a class="nav hide-sm" href="app-home.html#tree">Family tree</a>
+  <a class="nav hide-sm" href="app-home.html#stories" aria-current="page">Stories</a>
+  <span class="face" data-face="grandpa" data-d="52" role="img" aria-label="Signed in as Rosa" style="margin-left:10px"></span>
+</nav>
+
+<div class="wrap" style="padding-top:22px"><a class="linkbtn" href="app-home.html#stories">Back to stories</a></div>
+
+<div class="watchgrid">
+  <section aria-label="Story player">
+    <div class="screen onphoto" id="player">
+      <div class="slide on" data-year="1952"><img src="assets/p1952.jpg" alt="Arthur and Ines in 1952 outside a brick house" style="object-position:50% 35%"></div>
+      <div class="slide" data-year="1975"><img src="assets/p1975.jpg" alt="A young family on a porch step in 1975" style="object-position:50% 30%"></div>
+      <div class="slide" data-year="1994"><img src="assets/p1994.jpg" alt="Children blowing out birthday candles in 1994" style="object-position:50% 45%"></div>
+      <div class="slide" data-year="2008"><img src="assets/p2008.jpg" alt="A seaside picnic in 2008" style="object-position:50% 35%"></div>
+      <div class="scrim"></div>
+      <div class="cap" aria-live="off"><span class="yr">1952</span><p>We had nothing, but every Sunday we took the ferry across to the harbour.</p></div>
+    </div>
+    <div class="controls">
+      <button class="iconbtn" id="playbtn" aria-pressed="false" aria-label="Play or pause the story">
+        <svg class="ic-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        <svg class="ic-pause" viewBox="0 0 24 24" aria-hidden="true" style="display:none"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+      </button>
+      <span id="playlabel" class="linkbtn" style="text-decoration:none;min-width:3.4em">Play</span>
+      <div class="scrub" id="scrub" role="slider" tabindex="0" aria-label="Position in the story" aria-valuemin="0" aria-valuemax="238" aria-valuenow="36">
+        <div class="track"><div class="fill" id="fill"></div><div class="knob" id="knob"></div></div>
+      </div>
+      <span class="time"><span id="tcur">0:36</span> of <span id="tall">3:58</span></span>
+      <button class="btn btn-line" id="speedbtn" style="min-height:52px;padding:0 18px;font-size:18px">Speed 1x</button>
+      <button class="btn btn-line" id="nextbtn" style="min-height:52px;padding:0 18px;font-size:18px">Next photograph</button>
+    </div>
+    <div class="strip" aria-label="Photographs in this story">
+      <button aria-current="true" aria-label="Photograph from 1952"><img src="assets/p1952.jpg" alt=""></button>
+      <button aria-current="false" aria-label="Photograph from 1975"><img src="assets/p1975.jpg" alt=""></button>
+      <button aria-current="false" aria-label="Photograph from 1994"><img src="assets/p1994.jpg" alt=""></button>
+      <button aria-current="false" aria-label="Photograph from 2008"><img src="assets/p2008.jpg" alt=""></button>
+    </div>
+  </section>
+
+  <aside>
+    <div class="teller">
+      <span class="face" data-face="grandpa" data-d="76" role="img" aria-label="Arthur"></span>
+      <div><b>The harbour on Sundays</b><span>Told by Arthur, March 2026</span></div>
+    </div>
+    <ol class="script" aria-label="What Arthur said">
+      <li class="now">We had nothing, but every Sunday we took the ferry across to the harbour.</li>
+      <li>Your grandmother wore the blue dress, and I carried the basket up Mill Street.</li>
+      <li>By the time your father was ten, he was the one counting the boats.</li>
+      <li>I would tell it the same way again. That was the best of us.</li>
+    </ol>
+    <p style="margin-top:20px;color:var(--ink-3);font-size:18px">Sample story and sample people, for a design preview.</p>
+    <a class="btn btn-line" href="app-home.html" style="margin-top:18px">Add a photograph to this story</a>
+  </aside>
+</div>
+
+<script src="album.js"></script>
+</body>
+</html>

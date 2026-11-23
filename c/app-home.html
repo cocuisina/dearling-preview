@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dearling home, Album direction</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%230f6b5c%27/%3E%3Ccircle cx=%2716%27 cy=%2713%27 r=%275%27 fill=%27white%27/%3E%3Cpath d=%27M7 27c1-6 5-8 9-8s8 2 9 8z%27 fill=%27white%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="album.css">
+</head>
+<body>
+<nav class="bar solid" aria-label="Main">
+  <a class="brand" href="index.html">Dearling</a>
+  <a class="nav" href="app-home.html" aria-current="page">Home</a>
+  <a class="nav hide-sm" href="#tree">Family tree</a>
+  <a class="nav hide-sm" href="#stories">Stories</a>
+  <span class="face" data-face="grandpa" data-d="52" role="img" aria-label="Signed in as Rosa" style="margin-left:10px"></span>
+</nav>
+
+<header class="band onphoto">
+  <img src="assets/table.jpg" alt="" style="object-position:60% 35%">
+  <div class="scrim"></div>
+  <div class="inner">
+    <h1>Good morning, Rosa.</h1>
+    <p>Arthur's harbour story is ready to watch, and Daniel's school years are waiting for your voice.</p>
+  </div>
+</header>
+
+<section class="pull" aria-label="What to do next">
+  <article class="card watch">
+    <div class="th"><img src="assets/p1952.jpg" alt="" style="object-position:50% 30%"></div>
+    <div class="bd">
+      <h3>Arthur's harbour story</h3>
+      <p>Told by Arthur, 4 minutes, with 4 photographs.</p>
+      <a class="btn btn-primary" href="rewatch.html">Watch it</a>
+    </div>
+  </article>
+  <article class="card">
+    <h3>Keep talking</h3>
+    <p>You stopped at Daniel's school years. The tree has 7 people so far.</p>
+    <a class="btn btn-line pushdown" href="index.html">Continue the interview</a>
+  </article>
+  <article class="card">
+    <div class="faces" aria-hidden="true">
+      <span class="face" data-face="p1975" data-d="64"></span>
+      <span class="face" data-face="p1994" data-d="64"></span>
+      <span class="face" data-face="p2008" data-d="64"></span>
+    </div>
+    <h3>Three faces need names</h3>
+    <p>You can say who they are, or skip them.</p>
+    <a class="btn btn-line pushdown" href="rewatch.html">Name them</a>
+  </article>
+</section>
+
+<section class="sec wrap" style="padding-bottom:0" id="tree">
+  <div class="intro" style="margin-bottom:28px;grid-template-columns:1fr auto">
+    <h2 class="h2" style="font-size:clamp(32px,3.4vw,46px)">Your family tree</h2>
+    <a class="btn btn-line" href="index.html">Add a person</a>
+  </div>
+</section>
+<div class="treewrap">
+  <div class="treecard">
+    <div class="treebox" id="treebox" role="group" aria-label="Family tree with seven people">
+      <svg id="treesvg" aria-hidden="true" preserveAspectRatio="none"></svg>
+    </div>
+  </div>
+  <aside class="person" aria-label="Daniel">
+    <span class="face" data-face="p1975" data-d="96"></span>
+    <h3>Daniel</h3>
+    <p class="meta">Arthur's son, Rosa's husband. Born 1971.</p>
+    <ul>
+      <li><span class="th"><img src="assets/p1975.jpg" alt=""></span><span>Porch step, 1975</span></li>
+      <li><span class="th"><img src="assets/p1994.jpg" alt=""></span><span>Theo's birthday, 1994</span></li>
+    </ul>
+    <a class="btn btn-primary" href="rewatch.html">Record a story about Daniel</a>
+  </aside>
+</div>
+
+<section class="sec" id="stories">
+  <div class="wrap" style="margin-bottom:28px"><h2 class="h2" style="font-size:clamp(32px,3.4vw,46px)">Stories to watch</h2></div>
+  <div class="rail">
+    <a class="story" href="rewatch.html"><div class="im"><img src="assets/p1952.jpg" alt=""><span class="dur">4:08</span></div><h3>The harbour on Sundays</h3><span class="by">Told by Arthur</span></a>
+    <a class="story" href="rewatch.html"><div class="im"><img src="assets/p1975.jpg" alt=""><span class="dur">2:51</span></div><h3>The porch on Mill Street</h3><span class="by">Told by Rosa</span></a>
+    <a class="story" href="rewatch.html"><div class="im"><img src="assets/p2008.jpg" alt=""><span class="dur">3:20</span></div><h3>Watermelon at the shore</h3><span class="by">Told by Nina</span></a>
+    <a class="story" href="rewatch.html"><div class="im"><img src="assets/p2025.jpg" alt=""><span class="dur">1:46</span></div><h3>Rolling out the dough</h3><span class="by">Told by Lena</span></a>
+  </div>
+  <p class="wrap" style="margin-top:36px;color:var(--ink-3);font-size:18px">All names, faces and stories here are sample content for a design preview.</p>
+</section>
+
+<script src="album.js"></script>
+<script>
+(function () {
+  var box = document.getElementById("treebox"), svg = document.getElementById("treesvg");
+  // x, y in percent of the box; y is the top of the face circle in px rows
+  var P = [
+    { id: "arthur", n: "Arthur", s: "1927", k: "p1952", x: 26, y: 10 },
+    { id: "ines", n: "Ines", s: "1930", init: "I", x: 52, y: 10 },
+    { id: "daniel", n: "Daniel", s: "1971", k: "p1975", x: 26, y: 200, sel: 1 },
+    { id: "rosa", n: "Rosa", s: "1973", k: "p1994", x: 58, y: 200 },
+    { id: "marta", n: "Marta", s: "1974", init: "M", x: 90, y: 200 },
+    { id: "theo", n: "Theo", s: "2002", k: "p2008", x: 34, y: 390 },
+    { id: "nina", n: "Nina", s: "2009", k: "p2025", x: 56, y: 390 }
+  ];
+  var D = 88;
+  var W = box.clientWidth, minW = 640;
+  box.style.minWidth = minW + "px";
+  function draw() {
+    W = box.clientWidth;
+    box.querySelectorAll(".node").forEach(function (n) { n.remove(); });
+    var pos = {};
+    P.forEach(function (p) {
+      var a = document.createElement("a");
+      a.className = "node" + (p.sel ? " sel" : ""); a.href = "rewatch.html"; a.style.left = p.x / 100 * W + "px"; a.style.top = p.y + "px";
+      var f = document.createElement("span");
+      if (p.k) { f.className = "face"; f.setAttribute("data-face", p.k); }
+      else { f.className = "face init"; f.textContent = p.init; f.style.width = f.style.height = D + "px"; }
+      var lab = document.createElement("span"); lab.className = "lab"; lab.innerHTML = p.n + "<small>" + p.s + "</small>";
+      a.appendChild(f); a.appendChild(lab); box.appendChild(a);
+      if (p.k) { window.ALBUM_FACES; }
+      pos[p.id] = [p.x / 100 * W, p.y];
+    });
+    box.querySelectorAll("[data-face]").forEach(function () {});
+    // crop faces via album.js helper exposed through events
+    box.querySelectorAll(".node .face[data-face]").forEach(function (el) { window.__faceCrop(el, el.getAttribute("data-face"), D); });
+    var r = D / 2;
+    function c(id) { return pos[id]; }
+    var a = c("arthur"), i = c("ines"), d = c("daniel"), ro = c("rosa"), t = c("theo"), n = c("nina"), m = c("marta");
+    var cm = (a[0] + i[0]) / 2, cr = (d[0] + ro[0]) / 2;
+    var paths = [
+      "M" + (a[0] + r + 4) + " " + (a[1] + r) + " H" + (i[0] - r - 4),
+      "M" + cm + " " + (a[1] + r) + " V" + (a[1] + 170) + " H" + d[0] + " V" + (d[1] - 6),
+      "M" + cm + " " + (a[1] + 170) + " H" + m[0] + " V" + (m[1] - 6),
+      "M" + (d[0] + r + 4) + " " + (d[1] + r) + " H" + (ro[0] - r - 4),
+      "M" + cr + " " + (d[1] + r) + " V" + (d[1] + 160) + " H" + t[0] + " V" + (t[1] - 6),
+      "M" + cr + " " + (d[1] + 160) + " H" + n[0] + " V" + (n[1] - 6)
+    ];
+    svg.setAttribute("viewBox", "0 0 " + W + " " + box.clientHeight);
+    svg.innerHTML = paths.map(function (p) { return '<path d="' + p + '"/>'; }).join("");
+  }
+  window.addEventListener("resize", draw);
+  if (window.__faceCrop) draw(); else window.addEventListener("load", draw);
+})();
+</script>
+</body>
+</html>

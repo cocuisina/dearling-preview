@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dearling - Evergreen, lit</title>
+<meta name="description" content="Dearling is a family storytelling service. Talk about your family and the tree builds itself.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 38 38%27%3E%3Ccircle cx=%2719%27 cy=%279%27 r=%276%27 fill=%27%230f6b5c%27/%3E%3Ccircle cx=%278%27 cy=%2728%27 r=%276%27 fill=%27%230f6b5c%27/%3E%3Ccircle cx=%2730%27 cy=%2728%27 r=%276%27 fill=%27%238fe0cc%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Dearling home">
+      <svg viewBox="0 0 38 38" aria-hidden="true"><circle cx="19" cy="9" r="6" fill="#0f6b5c"/><circle cx="8" cy="28" r="6" fill="#0f6b5c"/><circle cx="30" cy="28" r="6" fill="#8fe0cc"/><path d="M19 15 C19 22 8 20 8 22 M19 15 C19 22 30 20 30 22" stroke="#0f6b5c" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
+      Dearling
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#how">How it works</a>
+      <a href="#private">Privacy</a>
+      <a class="btn btn-quiet" href="app-home.html">Sign in</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1 class="display">
+        <span class="big">Just talk.</span>
+        <span class="small">Your family tree <span class="mark">grows as you speak.</span></span>
+      </h1>
+      <p class="lede">A friendly voice asks about your family. Names and branches appear on the tree while you answer. No typing, no passwords.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#start">Start your family tree</a>
+        <a class="btn btn-quiet" href="#how">See how it works</a>
+      </div>
+      <p class="fine">Dearling is pre-launch. The people on this tree are made up for the preview.</p>
+    </div>
+
+    <div class="stage" data-speaking>
+      <div class="frame">
+        <button class="pause btn-icon" type="button" data-pause aria-label="Pause the tree animation" aria-pressed="false">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+        </button>
+        <div class="tree-box" data-tree role="img" aria-label="A family tree with five people: Samuel and Leela at the top, their children Marisol and Daniel, and their daughter Mina below.">
+          <svg class="links" viewBox="0 0 560 640" aria-hidden="true">
+            <path class="link ghost" d="M182 70 C256 70 190 150 190 223"/>
+            <path class="link ghost" d="M378 70 C304 70 370 150 370 223"/>
+            <path class="link ghost" d="M252 285 H308"/>
+            <path class="link ghost" d="M280 285 V438"/>
+            <path class="link pending" data-l="samuel" pathLength="1" d="M182 70 C256 70 190 150 190 223"/>
+            <path class="link pending" data-l="leela" pathLength="1" d="M378 70 C304 70 370 150 370 223"/>
+            <path class="link pending" data-l="couple" pathLength="1" d="M252 285 H308"/>
+            <path class="link pending" data-l="mina" pathLength="1" d="M280 285 V438"/>
+          </svg>
+          <div class="node pending" data-n="samuel" style="left:21.4%;top:1.3%"><div class="face"><img src="assets/samuel.jpg" alt="" width="240" height="240"></div><span class="who">Samuel</span><span class="role">Marisol's father</span></div>
+          <div class="node pending" data-n="leela" style="left:78.6%;top:1.3%"><div class="face"><img src="assets/leela.jpg" alt="" width="240" height="240"></div><span class="who">Leela</span><span class="role">Daniel's mother</span></div>
+          <div class="node pending" data-n="marisol" style="left:33.9%;top:34.9%"><div class="face"><img src="assets/marisol.jpg" alt="" width="240" height="240"></div><span class="who">Marisol</span><span class="role">Speaking</span></div>
+          <div class="node pending" data-n="daniel" style="left:66.1%;top:34.9%"><div class="face"><img src="assets/daniel.jpg" alt="" width="240" height="240"></div><span class="who">Daniel</span><span class="role">Her husband</span></div>
+          <div class="node pending" data-n="mina" style="left:50%;top:68.5%"><div class="face"><img src="assets/mina.jpg" alt="" width="240" height="240"></div><span class="who">Mina</span><span class="role">Their daughter</span></div>
+        </div>
+        <div class="say" aria-live="off">
+          <div class="say-head"><span class="rec"></span> Listening</div>
+          <div class="wave" data-wave="30" aria-hidden="true"></div>
+          <p class="caption" data-caption>We have a daughter, Mina.</p>
+        </div>
+      </div>
+      <div class="badge-float" aria-hidden="true"><b data-count>5</b>people on the tree</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec flow" id="how">
+  <div class="wrap">
+    <h2 class="rv">Four things happen, in order.</h2>
+    <p class="sub rv">You do the talking. Dearling does the rest.</p>
+    <div class="flow-track" data-flow>
+      <svg class="flow-svg" aria-hidden="true"><path class="flow-line" d=""/><path class="flow-dash" d=""/></svg>
+      <div class="step rv">
+        <div class="orb"><div class="mini-wave"><i style="--h:30%;--d:0s"></i><i style="--h:70%;--d:-.2s"></i><i style="--h:45%;--d:-.4s"></i><i style="--h:90%;--d:-.6s"></i><i style="--h:55%;--d:-.8s"></i><i style="--h:35%;--d:-1s"></i><i style="--h:65%;--d:-1.2s"></i></div></div>
+        <h3>Talk</h3>
+        <p>A friendly voice asks about your family. You answer out loud.</p>
+      </div>
+      <div class="step rv">
+        <div class="orb"><svg viewBox="0 0 90 90" width="84" height="84" aria-hidden="true"><path d="M45 22 C45 40 22 36 22 62 M45 22 C45 40 68 36 68 62" stroke="#0f6b5c" stroke-width="3.5" fill="none" stroke-linecap="round"/><circle cx="45" cy="18" r="11" fill="#0f6b5c"/><circle cx="22" cy="68" r="11" fill="#0f6b5c"/><circle cx="68" cy="68" r="11" fill="#8fe0cc" stroke="#0f6b5c" stroke-width="3"/></svg></div>
+        <h3>Tree</h3>
+        <p>Names and branches appear as you speak. Fix anything with a tap.</p>
+      </div>
+      <div class="step rv">
+        <div class="orb"><div class="stack"><img src="assets/porch.jpg" alt=""><img src="assets/album.jpg" alt=""><img src="assets/dinner.jpg" alt=""></div></div>
+        <h3>Photos</h3>
+        <p>Add old pictures. If you allow it, faces are matched to people on the tree.</p>
+      </div>
+      <div class="step rv">
+        <div class="orb"><img class="fill" src="assets/album.jpg" alt="" style="object-position:30% 30%"><span class="playmark"><span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span></span></div>
+        <h3>Story</h3>
+        <p>Tell a story about a photo. Your family watches it back, with your voice.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cine">
+  <img class="bg" src="assets/dinner.jpg" alt="">
+  <div class="wrap inner">
+    <h2 class="rv">Your voice is the keepsake.</h2>
+    <p class="rv" data-over-image>Photos fade. The way you tell the story is harder to replace. Dearling records it, writes it down, and plays it back over the pictures.</p>
+    <div class="quote rv" data-demo>
+      <img src="assets/leela.jpg" alt="" width="128" height="128">
+      <span>Story saved: "The summer we moved." 3 photos, 4 minutes.</span>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="private">
+  <div class="wrap">
+    <h2 class="rv">Kept private, kept simple.</h2>
+    <p class="sub rv">Dearling is pre-launch. The screens here use made-up people.</p>
+    <div class="bento">
+      <article class="cell c-faces rv">
+        <div class="photo-frame">
+          <img src="assets/porch.jpg" alt="An old colour photograph of a large family laughing together on a porch" width="1400" height="1055">
+          <span class="facebox ask" style="left:10.2%;top:36.5%;width:11%;height:13.5%"></span>
+          <span class="facebox" style="left:37.2%;top:35%;width:11%;height:14%"></span>
+          <span class="facebox" style="left:59.3%;top:59.5%;width:9.6%;height:14%"></span>
+          <div class="fb-card" style="left:3%;bottom:4%"><span>Is this Samuel?</span><div class="row"><button class="btn btn-primary" type="button">Yes</button><button class="btn btn-quiet" type="button">Not him</button></div></div>
+        </div>
+        <div class="copy">
+          <h3>Photos that know who is in them</h3>
+          <p>Turn on face matching and Dearling suggests a name. Nothing is saved until you say yes.</p>
+        </div>
+      </article>
+      <article class="cell c-hear rv">
+        <h3>Hear it, not just read it</h3>
+        <p>Every story keeps the voice that told it.</p>
+        <blockquote>"We moved in June, and the bus broke down twice."</blockquote>
+        <div class="play-demo">
+          <div class="pl"><button class="btn" type="button" aria-label="Play the story"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button><div class="bars" data-wave="26" aria-hidden="true"></div></div>
+        </div>
+      </article>
+      <article class="cell c-priv rv">
+        <h3>Only your family</h3>
+        <p>Private to your family. Invite only. No passwords, you sign in with a link we email you.</p>
+        <div class="mail"><small>Email from Dearling</small><b>Your sign-in link is ready</b><span class="fake">Open Dearling</span></div>
+      </article>
+      <article class="cell c-type rv">
+        <h3>No typing needed</h3>
+        <p>Speak, and your words are written down as you go. Fix a word later if you like.</p>
+        <div class="tx"><div>My father drove a bus for thirty years.</div><div class="now">He always hummed at the red lights</div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band q-sec">
+  <div class="wrap">
+    <h2 class="rv" style="max-width:24ch">Questions that start a story.</h2>
+    <p class="sub rv">A few of the things the interviewer might ask. You can skip any of them.</p>
+    <div class="rows">
+      <div class="marq" id="m1" tabindex="0" aria-label="Sample questions, scrolling. Focus to pause.">
+        <div class="marq-in">
+          <span class="chip">Where did you grow up?</span><span class="chip">What was your mother like?</span><span class="chip">Who taught you to cook?</span><span class="chip">What was your first job?</span><span class="chip">How did you meet your husband?</span><span class="chip">What did the house smell like?</span>
+          <span class="chip" aria-hidden="true">Where did you grow up?</span><span class="chip" aria-hidden="true">What was your mother like?</span><span class="chip" aria-hidden="true">Who taught you to cook?</span><span class="chip" aria-hidden="true">What was your first job?</span><span class="chip" aria-hidden="true">How did you meet your husband?</span><span class="chip" aria-hidden="true">What did the house smell like?</span>
+        </div>
+      </div>
+      <div class="marq rev" id="m2" tabindex="0" aria-label="More sample questions, scrolling. Focus to pause.">
+        <div class="marq-in">
+          <span class="chip">Who is in this photo?</span><span class="chip">Which song do you remember from then?</span><span class="chip">What did your grandparents do?</span><span class="chip">What is the funniest thing that happened?</span><span class="chip">Where were you married?</span><span class="chip">What would you tell the children?</span>
+          <span class="chip" aria-hidden="true">Who is in this photo?</span><span class="chip" aria-hidden="true">Which song do you remember from then?</span><span class="chip" aria-hidden="true">What did your grandparents do?</span><span class="chip" aria-hidden="true">What is the funniest thing that happened?</span><span class="chip" aria-hidden="true">Where were you married?</span><span class="chip" aria-hidden="true">What would you tell the children?</span>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-quiet hold" type="button" data-hold="#m1" aria-pressed="false">Hold the questions still</button>
+  </div>
+</section>
+
+<section class="final" id="start">
+  <div class="wrap">
+    <h2>Start with one question.</h2>
+    <p>Dearling is pre-launch. Leave your email and we will write when it opens.</p>
+    <form onsubmit="return false">
+      <label for="em">Your email</label>
+      <input id="em" type="email" placeholder="name@example.com" autocomplete="email">
+      <button class="btn btn-light" type="submit">Tell me when it opens</button>
+    </form>
+    <p class="fine" style="margin-top:24px;font-size:18px">Private to your family. Invite only. No passwords.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><span>Dearling, a family storytelling service. Pre-launch preview.</span><a href="app-home.html">See the signed-in home</a><a href="rewatch.html">See a story playing</a></div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
